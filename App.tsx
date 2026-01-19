@@ -84,16 +84,25 @@ const App: React.FC = () => {
                  <i className="fas fa-shield-halved text-8xl text-indigo-500 drop-shadow-[0_0_15px_rgba(99,102,241,0.5)]"></i>
              </div>
              <h2 className="text-8xl font-black text-white tracking-tighter mb-6">AstitvaRaksha</h2>
-             <p className="text-slate-400 text-2xl max-w-xl mb-16 font-medium leading-relaxed">Identity Intelligence for National Security and Welfare Integrity.</p>
+             <p className="text-slate-400 text-2xl max-w-xl mb-12 font-medium leading-relaxed">Identity Intelligence for National Security and Welfare Integrity.</p>
+             
+             <p className="text-slate-600 text-[10px] font-black uppercase tracking-[0.4em] mb-10 opacity-80">Not sure where to start?</p>
+
              <div className="flex flex-col sm:flex-row gap-8">
-                <label className="bg-slate-900/30 border-2 border-dashed border-slate-800 rounded-[3rem] px-20 py-12 flex flex-col items-center gap-6 cursor-pointer hover:border-indigo-500/50 hover:bg-slate-900/50 transition-all group shadow-2xl">
+                <label className="bg-slate-900/30 border-2 border-dashed border-slate-800 rounded-[3rem] px-16 py-12 flex flex-col items-center gap-6 cursor-pointer hover:border-indigo-500/50 hover:bg-slate-900/50 transition-all group shadow-2xl min-w-[400px]">
                    <i className="fas fa-upload text-4xl text-slate-700 group-hover:text-indigo-400 transition-colors"></i>
-                   <span className="font-black text-[11px] text-slate-600 uppercase tracking-widest">Ingest Real-time Audit Logs</span>
+                   <div className="flex flex-col items-center gap-2">
+                      <span className="font-black text-[11px] text-slate-400 uppercase tracking-widest group-hover:text-white transition-colors">Ingest Real-time Audit Logs</span>
+                      <span className="text-[10px] text-indigo-500/60 font-bold tracking-tight">Real-Time Mode: Analyze your own aadhar enrolment dataset</span>
+                   </div>
                    <input type="file" accept=".csv" className="hidden" onChange={handleFileUpload} />
                 </label>
-                <button onClick={handleLoadDemo} className="bg-indigo-600 rounded-[3rem] px-20 py-12 flex flex-col items-center gap-6 text-white hover:bg-indigo-500 transition-all shadow-[0_20px_60px_rgba(79,70,229,0.3)] border border-indigo-400">
+                <button onClick={handleLoadDemo} className="bg-indigo-600 rounded-[3rem] px-16 py-12 flex flex-col items-center gap-6 text-white hover:bg-indigo-500 transition-all shadow-[0_20px_60px_rgba(79,70,229,0.3)] border border-indigo-400 min-w-[400px]">
                    <i className="fas fa-bolt-lightning text-4xl"></i>
-                   <span className="font-black text-[11px] uppercase tracking-widest">Execute Tactical Simulation</span>
+                   <div className="flex flex-col items-center gap-2">
+                      <span className="font-black text-[11px] uppercase tracking-widest">Execute Tactical Simulation</span>
+                      <span className="text-[10px] text-indigo-200 font-bold tracking-tight opacity-80">Simulation Mode: Explore features with built-in data</span>
+                   </div>
                 </button>
              </div>
           </div>
