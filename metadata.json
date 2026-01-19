@@ -1,0 +1,5 @@
+{
+  "name": "Aadhaar Border Enrolment Risk Intelligence System",
+  "description": "An end-to-end analytical system to detect suspicious Aadhaar enrolment spikes in border states of India, providing visual drill-downs and AI-powered risk mitigation recommendations.",
+  "requestFramePermissions": []
+}
